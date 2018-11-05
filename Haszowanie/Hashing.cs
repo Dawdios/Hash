@@ -12,6 +12,9 @@ namespace Haszowanie
         int maxElementsInLists; //%
         int minElementsInLists; //%
         int capacity;
+
+        public int Capacity { get => capacity; set => capacity = value; }
+
         public Hashing(int capacity, int minElementsInLists = 1, int maxElementsInLists = 3)
         {
             table = new List<object>[findPrime(capacity)];

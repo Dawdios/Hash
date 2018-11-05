@@ -20,6 +20,8 @@ namespace Haszowanie
                 iter--;
             }
             hashing.Print();
+
+      
             Console.ReadKey();
 
            
