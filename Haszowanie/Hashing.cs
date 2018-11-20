@@ -38,8 +38,8 @@ namespace Haszowanie
         {
 
             long position = FindPosition(x);
-
-            table[position].Remove(x);
+            if(table[position].IndexOf(x) !=-1)
+                table[position].Remove(x);
             CheckIsEmpty(table);
         }
         public bool Include(object x)
